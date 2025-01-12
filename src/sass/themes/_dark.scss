@@ -1,6 +1,11 @@
 .dark {
-    --primary-color: #1abc9c;
-    --secondary-color: #9b59b6;
-    --text-color: #fff;
-    --background-color: #222;
+    --color-default: #fff;
+    --color-primary: #fff;
+    --color-secondary: #181B1C;
+    --bg-btn-switcher: #1F2122;
+    --bg-btn-slide: rgba(0, 0, 0, 0.4);
+    --bg-body: #0E1011; 
+    --text-inverse: #0E1011; 
+    --blur-primary: rgba(255, 255, 255, 0.6);
+    --blur-inverse: rgba(14, 16, 17, 0.5);
 }

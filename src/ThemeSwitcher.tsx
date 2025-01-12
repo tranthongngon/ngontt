@@ -2,13 +2,12 @@ import React from 'react';
 import { useTheme } from './ThemeContext';
 
 const ThemeSwitcher: React.FC = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme ,toggleTheme } = useTheme();
 
   return (
-    <div>
-      <p>Current theme: {theme}</p>
-      <button onClick={toggleTheme}>Toggle Theme</button>
-    </div>
+    <button className={`btn-switcher ${theme}`} onClick={toggleTheme}>
+      <span className='btn-switcher--dot'></span>
+    </button>
   );
 };
 
