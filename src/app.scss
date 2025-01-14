@@ -3,53 +3,67 @@
 *,
 body,
 html {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", serif;
+}
+a,
+span,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: "DM Sans", serif;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--bg-body);
-    transition: all 0.3s ease;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-body);
+  transition: all 0.3s ease;
 }
 
 .app {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    &__left {
-        width: 49.6875%;
-        padding: 12px;
-        padding-right: 0;
-    }
-    &__right {
-        flex: 1;
-        padding: 12px;
-    }
+  width: 100%;
+  height: 100%;
+  display: flex;
+  &__left {
+    width: 49.6875%;
+    padding: 12px;
+    padding-right: 0;
+  }
+  &__right {
+    flex: 1;
+    padding: 12px;
+  }
 }
 
 .btn-switcher {
-    width: 30px;
-    height: 20px;
-    background-color: var(--bg-btn-switcher);
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 0 6px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
+  width: 30px;
+  height: 20px;
+  background-color: var(--bg-btn-switcher);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 6px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  &.dark {
     transition: all 0.3s ease;
-    &.dark {
-        transition: all 0.3s ease;
-        justify-content: flex-end;
-    }
-    &--dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: var(--color-primary);
-        transition: all 0.3s ease;
-    }
+    justify-content: flex-end;
+  }
+  &--dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    transition: all 0.3s ease;
+  }
 }

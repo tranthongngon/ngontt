@@ -15,8 +15,8 @@ export default function Menu() {
   };
   return (
     <ul className="header__menu">
-      {menuItems.map((m) => (
-        <li className="header__menu-item">
+      {menuItems.map((m, index) => (
+        <li className="header__menu-item" key={index}>
           <Link to={`/${m.toLocaleLowerCase()}`}>
             <motion.div whileHover="visible" initial="hidden" className="wrap">
               <motion.div
