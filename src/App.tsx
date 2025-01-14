@@ -1,20 +1,20 @@
 import "./app.scss";
-import Fixed from "./components/fixed/Fixed";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/contact/Contact";
 import Work from "./pages/work/Work";
 import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import Home from "./pages/home/Home";
+import Header from "./layout/header/Header";
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <div className="app__left">
-          <Fixed />
+        <div className="app__header">
+          <Header/>
         </div>
-        <main className="app__right">
+        <main className="app__main">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/work" element={<Work />} />

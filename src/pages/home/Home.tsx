@@ -1,7 +1,15 @@
-import React from 'react'
+import Slide from '../../components/slide/Slide';
+import './home.scss';
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div className="home common">
+      <div className="common__sticky">
+        <Slide/>
+      </div>
+      <div className="common__content">
+
+      </div>
+    </div>
   )
 }

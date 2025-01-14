@@ -2,7 +2,6 @@ import "./header.scss";
 import ThemeSwitcher from "../../ThemeSwitcher";
 import { Link } from "react-router-dom";
 import Menu from "../menu/Menu";
-import Edge1 from "../../assets/images/edge1.svg";
 
 export default function Header() {
   return (
