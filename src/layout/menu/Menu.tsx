@@ -1,4 +1,3 @@
-import React from "react";
 import { menuItems } from "../../models/header.model";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";

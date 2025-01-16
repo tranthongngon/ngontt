@@ -1,8 +1,9 @@
 .dark {
     --color-default: #fff;
     --color-primary: #fff;
-    --color-secondary: #181B1C;
-    --bg-btn-switcher: #1F2122;
+    --color-secondary: rgba(255, 255, 255, .07);
+    --color-secondary-hover: rgba(255, 255, 255, 0.11);
+    --bg-btn-switcher: rgba(255, 255, 255, .07);
     --bg-btn-slide: rgba(0, 0, 0, 0.4);
     --bg-body: #0E1011; 
     --text-inverse: #0E1011; 

@@ -1,3 +1,4 @@
+import Infomation from '../../components/infomation/Infomation';
 import Slide from '../../components/slide/Slide';
 import './home.scss';
 
@@ -8,7 +9,7 @@ export default function Home() {
         <Slide/>
       </div>
       <div className="common__content">
-
+        <Infomation/>
       </div>
     </div>
   )
