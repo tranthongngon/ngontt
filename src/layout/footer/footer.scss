@@ -1,0 +1,48 @@
+@use "../../sass/global.scss";
+.footer {
+    position: relative;
+    width: 100%;
+    &__wrap {
+        display: flex;
+        padding: 64px;
+        border-radius: 12px;
+        background-color: var(--color-default);
+        width: 100%;
+        transition: all 0.3s ease;
+        position: relative;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+    &__top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-btn {
+            background-color: var(--bg-body);
+            transition: all 0.3s ease;
+            color: var(--color-default);
+            font-size: 14px;
+            font-weight: 400;
+            padding: 12px 14px;
+            line-height: 1;
+            text-decoration: none;
+            border-radius: 12px;
+        }
+    }
+    &__bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-copyright {
+            color: var(--blur-inverse);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            .white {
+                color: var(--text-inverse);
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    &__head {
+        position: relative;
+        &-wrap {
+            background-color: var(--color-secondary);
+            border-radius: 12px;
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+        &-title {
+            &--text {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 1;
+                color: var(--color-default);
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                svg {
+                    width: 12px;
+                    height: 14px;
+                    path {
+                        fill: var(--color-default);
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+        &-btn {
+            border-bottom: 1px solid var(--color-default);
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-default);
+                line-height: 1;
+                text-decoration: none;
+            }
+        }
+    }
+    &__body {
+        display: grid;
+        flex: 0 0 auto;
+        gap: 12px;
+        grid-auto-rows: min-content;
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+        height: min-content;
+        justify-content: center;
+        padding: 0px;
+        position: relative;
+        width: 100%;
+    }
+    &__footer {
+        width: 100%;
+        position: relative;
+        &-btn {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 12px 0;
+            text-align: center;
+            background-color: var(--color-secondary);
+            color: var(--color-default);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: var(--color-secondary-hover);
+            }
+        }
+    }
+}

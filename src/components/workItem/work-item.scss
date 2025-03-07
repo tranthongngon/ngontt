@@ -1,0 +1,54 @@
+.work {
+    position: relative;
+    width: 100%;
+    &__wrap {
+        padding: 24px 32px;
+        background-color: var(--color-secondary);
+        transition: all 0.3s ease;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        &:hover {
+            background-color: var(--color-secondary-hover);
+        }
+        &-name {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1;
+            color: var(--color-default);
+            transition: all 0.3s ease;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .year {
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                transition: all 0.3s ease;
+                color: var(--color-default);
+            }
+        }
+        .btn {
+            width: fit-content;
+            height: fit-content;
+            padding: 0;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            padding-left: 12px;
+            svg {
+                width: 12px;
+                height: 10px;
+                path {
+                    fill: var(--color-default);
+                }
+            }
+        }
+    }
+}

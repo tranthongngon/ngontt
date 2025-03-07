@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import "./slide.scss";
 import { dataSlide } from "../../models";
 import { Link } from "react-router-dom";
-import { SwiperRef } from "swiper/react";
 
 export default function Slide() {
   const prevButtonRef = useRef<HTMLButtonElement | null>(null);

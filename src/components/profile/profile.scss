@@ -1,0 +1,48 @@
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    position: relative;
+    &.is-light {
+        .profile__text-name {
+            color: var(--color-default);
+        }
+        .profile__text-postion {
+            color: var(--blur-primary);
+        }
+    }
+    &.is-dark {
+        .profile__text-name {
+            color: var(--text-inverse);
+        }
+        .profile__text-postion {
+            color: var(--blur-inverse);
+        }
+    }
+    &__avatar {
+        width: 80px;
+        height: 80px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    &__text {
+        &-name {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 3px;
+            line-height: 21.6px;
+            transition: all 0.3s ease;
+        }
+        &-postion {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1;
+            transition: all 0.3s ease;
+            
+        }
+    }
+}
