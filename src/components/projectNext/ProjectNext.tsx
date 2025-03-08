@@ -22,7 +22,7 @@ export default function ProjectNext(props: ProjectInfoPropsType) {
             <p className="bottom__brief"> {props.project.brief} </p>
             <Link
               className="bottom__btn"
-              to={`work/${props.project.name.toLocaleLowerCase}/${props.project.id}`}
+              to={`/work/${props.project.name.toLocaleLowerCase()}/${props.project.id}`}
             >
               View Project
             </Link>
@@ -37,7 +37,7 @@ export default function ProjectNext(props: ProjectInfoPropsType) {
         viewport={{ once: true }}
       >
         <Link
-          to={`work/${props.project.name.toLocaleLowerCase}/${props.project.id}`}
+          to={`/work/${props.project.name.toLocaleLowerCase()}/${props.project.id}`}
           className="next__img-wrap"
         >
           <div className="next__img-name">

@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 import "./slide.scss";
 import { dataSlide } from "../../models";
 import { Link } from "react-router-dom";
+import ArrowLeft from "../../assets/images/arrow-left-light.png";
+import ArrowRight from "../../assets/images/arrow-right-light.png";
 
 export default function Slide() {
   const prevButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -14,11 +16,7 @@ export default function Slide() {
   const swiperRef = useRef<any>(null); // Use `any` for Swiper instance as TypeScript doesn't enforce a specific type.
 
   useEffect(() => {
-    if (
-      swiperRef.current &&
-      prevButtonRef.current &&
-      nextButtonRef.current
-    ) {
+    if (swiperRef.current && prevButtonRef.current && nextButtonRef.current) {
       swiperRef.current.params.navigation.prevEl = prevButtonRef.current;
       swiperRef.current.params.navigation.nextEl = nextButtonRef.current;
 
@@ -33,7 +31,7 @@ export default function Slide() {
       <Swiper
         modules={[Navigation, Pagination]}
         pagination={{
-          clickable: true
+          clickable: true,
         }}
         onSwiper={(swiper) => {
           swiperRef.current = swiper; // Capture Swiper instance
@@ -63,14 +61,10 @@ export default function Slide() {
           </SwiperSlide>
         ))}
         <button ref={prevButtonRef} className="btn-slide left">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-            <path fill="transparent" d="M22.5 12.5 15 20l7.5 7.5" />
-          </svg>
+          <img src={ArrowLeft} alt="btn-slide" />
         </button>
         <button ref={nextButtonRef} className="btn-slide right">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-            <path fill="transparent" d="M17.5 12.5 25 20l-7.5 7.5" />
-          </svg>
+          <img src={ArrowRight} alt="btn-slide" />
         </button>
       </Swiper>
     </div>

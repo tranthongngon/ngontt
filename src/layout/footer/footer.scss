@@ -46,3 +46,33 @@
         }
     }
 }
+@media (max-width: 809px) {
+    .footer {
+        &__wrap {
+            padding: 40px;
+            row-gap: 48px;
+        }
+        &__top {
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: 32px;
+            &-btn {
+                padding: 10px 12px;
+            }
+        }
+        &__bottom {
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: 32px;
+            &-copyright {
+                color: var(--blur-inverse);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                .white {
+                    color: var(--text-inverse);
+                }
+            }
+        }
+    }
+}

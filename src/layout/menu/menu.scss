@@ -40,3 +40,10 @@
         }
     }
 }
+@media (max-width: 809px) {
+    .footer {
+        &__menu {
+            column-gap: 15px;
+        }
+    }
+}

@@ -46,3 +46,20 @@
         }
     }
 }
+@media (max-width: 809px) {
+    .profile {
+        flex-direction: column;
+        row-gap: 16px;
+        column-gap: 0;
+        &__avatar {
+            width: 60px;
+            height: 60px;
+        }
+        &__text {
+            text-align: center;
+            &-name {
+                font-size: 20px;
+            }
+        }
+    }
+}

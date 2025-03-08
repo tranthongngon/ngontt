@@ -91,3 +91,13 @@
         }
     }
 }
+@media (max-width: 809px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+    }
+    .menu__mobile {
+        padding: 3.5px 20px 11.5px 20px;
+    }
+}

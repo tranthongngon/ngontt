@@ -7,14 +7,37 @@ import Blog from "./pages/blog/Blog";
 import Home from "./pages/home/Home";
 import Header from "./layout/header/Header";
 import Detail from "./pages/detail/Detail";
+import MenuMobile from "./layout/menuMobile/MenuMobile";
+import { useState } from "react";
+import { AnimatePresence } from "motion/react";
+import * as motion from "motion/react-client";
+import NavMobile from "./layout/navMobile/NavMobile";
 
 function App() {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
   return (
     <Router>
       <div className="app">
         <div className="app__header">
           <Header />
         </div>
+        <div className="app__mobile" onClick={() => setShowMenu(true)}>
+          <MenuMobile />
+        </div>
+        <AnimatePresence initial={false}>
+          {showMenu ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              key="box"
+              className="app__menumobile"
+            >
+              <NavMobile setShowMenu={setShowMenu}/>
+            </motion.div>
+          ) : null}
+        </AnimatePresence>
+
         <main className="app__main">
           <Routes>
             <Route index path="/" element={<Home />} />

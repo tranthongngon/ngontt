@@ -27,7 +27,7 @@ export default function Detail() {
       }
     }
     return () => {};
-  }, []);
+  }, [params]);
 
   return (
     <div className="detail common">

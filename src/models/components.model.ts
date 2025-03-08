@@ -1,7 +1,7 @@
 import Image1 from "../assets/images/slide1.png";
 import Image2 from "../assets/images/slide2.png";
 import Image3 from "../assets/images/slide3.png";
-import { getImageByName, getListImg } from "../utils";
+import { getImageByName } from "../utils";
 
 export type Schema = { [key: string]: any };
 

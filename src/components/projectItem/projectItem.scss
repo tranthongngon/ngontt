@@ -82,3 +82,12 @@
         }
     }
 }
+@media (max-width: 809px) {
+    .project {
+        &__item {
+            aspect-ratio: 0.75 / 1;
+            height: var(auto, 488px);
+        }
+    }
+    
+}
