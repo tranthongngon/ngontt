@@ -16,7 +16,7 @@ export default function ProjectItem(props: ProjectItemProps) {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <Link to={`/work/:${props.id}`} className="project__wrap">
+      <Link to={`/work/${props.name.toLocaleLowerCase()}/${props.id}`} className="project__wrap">
         <div className="project__item-tag">
           <div className="project__item-tag--name">
             {props.name}

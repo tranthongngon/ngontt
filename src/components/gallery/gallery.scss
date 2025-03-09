@@ -11,9 +11,9 @@
     width: 100%;
     &__img {
         aspect-ratio: 0.755844 / 1;
+        height: var(auto, 770px);
         border-radius: 12px;
         flex: 0 0 auto;
-        height: var(770px);
         overflow: hidden;
         position: relative;
         width: 100%;
@@ -26,6 +26,24 @@
             object-position: center center;
             object-fit: cover;
             border-radius: 12px;
+        }
+    }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+    .gallery {
+        display: grid;
+        grid-auto-rows: minmax(0px, 1fr);
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+        grid-template-rows: repeat(2, minmax(0px, 1fr));
+        &__img {
+            height: var(auto, 512px);
+        }
+    }
+}
+@media (max-width: 809px) {
+    .gallery {
+        &__img {
+            height: var(auto, 265px);
         }
     }
 }

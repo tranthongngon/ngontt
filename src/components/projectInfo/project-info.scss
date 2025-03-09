@@ -80,3 +80,44 @@
         }
     }
 }
+@media (min-width: 810px) and (max-width: 1199px) {
+    .info {
+        &__brief {
+            &-wrap {
+                padding: 40px;
+            }
+        }
+        &__detail {
+            &-item {
+                &--wrap {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 809px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        &__brief {
+            width: 100%;
+            .name {
+                font-size: 32px;
+                line-height: 1;
+            }
+            &-wrap {
+                gap: 48px;
+                padding: 32px;
+            }
+        }
+        &__detail {
+            width: 100%;
+            &-item {
+                &--wrap {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

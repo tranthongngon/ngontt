@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <div className="common__content">
         <Infomation/>
-        <ListProject/>
+        <ListProject hideHeader={false} hideFooter={false} />
         <Socials columns={2} width='100%' />
         <Footer/>
       </div>

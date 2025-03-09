@@ -2,7 +2,7 @@ import "./work-list.scss";
 import { dataProject } from "../../models";
 import WorkItem from "../workItem/WorkItem";
 export type WorkListPropsType = {
-  handleHover: (name: string, image: string) => void;
+  handleHover?: (name: string, image: string) => void;
 };
 export default function WorkList(props: WorkListPropsType) {
   return (
@@ -14,7 +14,7 @@ export default function WorkList(props: WorkListPropsType) {
           id={w.id}
           year={w.year}
           image={w.image}
-          handleHover={props.handleHover}
+          handleHover={props?.handleHover ?? (() => {})}
         />
       ))}
     </div>
